@@ -12,3 +12,39 @@
 body{
     font-family: sans-serif ;
 }
+
+
+.mwp-deafault{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    background-color: #FF6900;
+    position: sticky;
+    top: 0;
+}
+
+.header-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-flexbox > img {
+    object-fit: contain;
+    width: 135px;
+}
+
+.header-flexbox a{
+    padding-right: 10px;
+} 
