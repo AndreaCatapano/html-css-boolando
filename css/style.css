@@ -49,6 +49,7 @@ header {
 
 /* Main */
 
+
 .shop-container-flex {
     display: flex;
     justify-content: space-between;
@@ -64,17 +65,21 @@ header {
     aspect-ratio: 2/3;
 }
 
-.product-card img {
+.img-container {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
     transition: opacity 0.3s ease;
 }
 
-.product-card .img-hover {
+.img-container .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
 }
 
@@ -90,7 +95,7 @@ header {
     position: absolute;
     z-index: 1;
     left: 0;
-    bottom: 10%;
+    bottom: 15%;
 }
 
 .heart-box{
@@ -119,6 +124,25 @@ header {
     background-color: green;
 }
 
+
+.brand-name-shop{
+    font-weight: 300;
+}
+.product-name{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sales-price{
+    color: red;
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+.normal-price{
+    text-decoration: line-through;
+    font-weight: 500;
+}
 /* Footer */
 footer {
     background-color: #1A1A1A;
