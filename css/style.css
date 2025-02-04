@@ -48,3 +48,17 @@ header{
 .header-flexbox a{
     padding-right: 10px;
 } 
+
+
+
+/* Header */
+footer{
+    background-color: #1A1A1A;
+}
+
+.footer-section-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
