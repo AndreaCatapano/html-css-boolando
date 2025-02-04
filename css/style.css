@@ -46,13 +46,41 @@ header {
     width: 135px;
 }
 
+/* Main */
 
-/* Header */
+.shop-container-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-card img {
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-card .img-hover {
+    opacity: 0;
+}
+
+.product-card:hover .img-normal {
+    opacity: 0;
+}
+
+.product-card:hover .img-hover {
+    opacity: 1;
+}
+
+/* Footer */
 footer {
     background-color: #1A1A1A;
 }
 
-.footer-pading-default{
+.footer-pading-default {
     padding-bottom: 10px;
 }
 
@@ -60,15 +88,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     color: white;
 }
 
-.footer-section-flex p{
+.footer-section-flex p {
     padding-right: 14px;
 }
 
-.footer-section-flex a{
+.footer-section-flex a {
     padding-right: 5px
 }
 
